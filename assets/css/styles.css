@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    max-width: 414px;
+    max-height: 896px;
+}
+
+#background{
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    width: 414px;
+    height:896px;
+    position: relative;
+}
+
+#profilepic{
+    width:130px;
+    height: 130px;
+    border-radius: 50em;
+    position: absolute;
+    top: 161px;
+    left: 33%;
+}
+
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:white;
+}
+
+h1{
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+    left: 38%;
+}
+
+h2{
+    font-size: 15px;
+    position: absolute;
+    top: 361px;
+    left: 30%;
+}
+
+#icons{
+    color: white;
+}
+
+#end{
+    background-color: rgba(0, 0, 0, .61);
+    padding: 15px;
+    border-radius: 50em;
+    position: absolute;
+    top: 750px;
+    left: 10%;
+}
+
+#end-icon{
+    color: #FE3A2D;
+}
+
+#pickup{
+    background-color: #09D260;
+    padding: 22px;
+    border-radius: 50em;
+    position: absolute;
+    top: 700px;
+    left: 42%;
+}
+
+#pickup-icon{
+    color:white;
+}
+
+#pickup-message{
+    position: absolute;
+    top: 800px;
+    left: 130px;
+    height: 24px;
+    width: 161px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+#message{
+    padding: 15px;
+    border-radius: 50em;
+    position: absolute;
+    top: 750px;
+    left: 75%;
+}
