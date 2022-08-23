@@ -64,7 +64,7 @@ h2{
     border-radius: 50%;
     position: absolute;
     top: 550px;
-    left: 41%;
+    left: 42%;
 }
 
 #pickup-icon{
@@ -74,7 +74,7 @@ h2{
 
 #pickup-message{
     position: absolute;
-    top: 800px;
+    top: 640px;
     left: 130px;
     height: 24px;
     width: 161px;
