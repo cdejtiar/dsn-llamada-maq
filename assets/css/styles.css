@@ -9,7 +9,7 @@
     background-image: url("../imgs/background.jpg");
     background-repeat: no-repeat;
     width: 414px;
-    height:896px;
+    height:100vh;
     position: relative;
 }
 
@@ -48,28 +48,28 @@ h2{
 
 #end{
     background-color: rgba(0, 0, 0, .61);
-    padding: 15px;
-    border-radius: 50em;
+    border-radius: 50%;
     position: absolute;
-    top: 750px;
+    top: 600px;
     left: 10%;
 }
 
 #end-icon{
     color: #FE3A2D;
+    padding: 15px;
 }
 
 #pickup{
     background-color: #09D260;
-    padding: 22px;
-    border-radius: 50em;
+    border-radius: 50%;
     position: absolute;
-    top: 700px;
-    left: 42%;
+    top: 550px;
+    left: 41%;
 }
 
 #pickup-icon{
     color:white;
+    padding: 22px;
 }
 
 #pickup-message{
@@ -88,6 +88,6 @@ h2{
     padding: 15px;
     border-radius: 50em;
     position: absolute;
-    top: 750px;
+    top: 600px;
     left: 75%;
 }
