@@ -17,9 +17,26 @@
     width:130px;
     height: 130px;
     border-radius: 50em;
-    position: absolute;
+    background-color: #657781;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: absolute;
     top: 161px;
-    left: 33%;
+    left: 33%;*/
+}
+#profilepic img{
+    width: 70%;
+
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 137px;
+    position: relative;
 }
 
 h1, h2{
@@ -28,20 +45,26 @@ h1, h2{
     color:white;
 }
 
+#mainScreen{
+    display: none;
+}
+
 h1{
-    font-size: 20px;
-    position: absolute;
+    font-size: 28px;
+    padding-top: 30px;
+    /*position: absolute;
     top: 320px;
-    left: 38%;
+    left: 27%;*/
 }
 
 h2{
     font-size: 15px;
-    position: absolute;
+    padding-top: 15px;
+    /*position: absolute;
     top: 361px;
-    left: 30%;
+    left: 30%;*/
 }
-
+*/
 #icons{
     color: white;
 }
@@ -50,7 +73,7 @@ h2{
     background-color: rgba(0, 0, 0, .61);
     border-radius: 50%;
     position: absolute;
-    top: 600px;
+    top: 690px;
     left: 10%;
 }
 
@@ -63,7 +86,7 @@ h2{
     background-color: #09D260;
     border-radius: 50%;
     position: absolute;
-    top: 550px;
+    top: 680px;
     left: 42%;
 }
 
@@ -74,20 +97,160 @@ h2{
 
 #pickup-message{
     position: absolute;
-    top: 640px;
+    top: 770px;
     left: 130px;
     height: 24px;
     width: 161px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
+    color: #757C84;
 }
 
 #message{
     padding: 15px;
     border-radius: 50em;
     position: absolute;
-    top: 600px;
+    top: 690px;
     left: 75%;
+    color: white;
+}
+
+/*flechitas*/
+.arrow{
+    position: absolute;
+    bottom: 220px;
+    left: 192px
+}
+.arrow span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(225deg);
+    margin: 10px;
+    animation: animateArrow 1s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.1s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(4){
+    animation-delay: -0.3s;
+}
+
+
+@keyframes animateArrow {
+    0%{
+        opacity: 0;
+        transform: rotate(225deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(225deg) translate(10px,10px);
+    }
+}
+
+/*vibracion pickup*/
+.vibrate-1 {
+	animation: vibrate-1 0.5s linear 1s alternate-reverse ;
+}
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+  
+/*slide up*/
+.slide-up{
+    top: 550px;
+}
+
+/*pickup screen*/
+/*menu*/
+#menuItems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1F2C34;
+    
+}
+#pickupMenu{
+    background-color: #1F2C34;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#menuItems i{
+    color: white;
+}
+#pickupMenu{
+    text-align: center;
+    height: 120px;
+    
+}
+
+#expandless-icon{
+    font-size: 2em;
+    color: #5F6A70;
+}
+#arrowforwardios-icon{
+    font-size: 2em;
+    color: #5F6A70;
+    rotate: calc(-90deg);
+}
+
+.hangUp{
+    background-color: #E91C43;
+    border-radius: 50%;
+}
+/*contact*/
+#pickupContact{
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+}
+#pickupProfilepic{
+    width:268px;
+    height: 268px;
+    border-radius: 50em;
+    background-color: #657781;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pickupNumber{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+#pickupCalltime{
+    color: #AAB1B9;
+    font-size: 32px;
 }
