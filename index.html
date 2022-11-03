@@ -62,11 +62,12 @@
       </div>
     </div>
     
-      <div id="pickupScreen">
-        <h1 id="pickupNumber">+54 9 11 3826 8844</h1>
-        <h2 id="pickupCallTime"><span id="minutes">0</span><span id="seconds">0</span></h2>
+      <div id="pickupScreen" onchange="start()">
+        <div id="number_time">
+          <h1 id="pickupNumber">+54 9 11 3826 8844</h1>
+          <h2 id="pickupCallTime"><span id="minutes">00:</span><span id="seconds">00</span></h2>
+        </div>
         <div id="pickupContact">
-          <div id="pickupProfilepic">
             <svg
               width="74"
               height="70"
@@ -83,7 +84,6 @@
                 fill="#D3D6DB"
               />
             </svg>
-          </div>
         </div>
         <div id="pickupMenu">
           <i id="arrowforwardios-icon" class="material-icons">arrow_forward_ios</i>
